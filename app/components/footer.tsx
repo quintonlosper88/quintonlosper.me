@@ -13,11 +13,28 @@ export const Footer = () => {
       <div>
         <h3 className="font-bold mb-5">DIRECT</h3>
         <div className="flex flex-col gap-2">
-          <a className="uppercase text-zinc-700 hover:text-amber-500">
+          <a
+            href="https://www.linkedin.com/in/quinton-losper/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="uppercase text-zinc-700 hover:text-amber-500 transition-colors"
+          >
             linkedin
           </a>
-          <a className="uppercase text-zinc-700 hover:text-amber-500">Github</a>
-          <a className="uppercase text-zinc-700 hover:text-amber-500">email</a>
+          <a
+            href="https://github.com/quinton-losper"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="uppercase text-zinc-700 hover:text-amber-500 transition-colors"
+          >
+            Github
+          </a>
+          <a
+            href="mailto:quinton.losper@metso.com"
+            className="uppercase text-zinc-700 hover:text-amber-500 transition-colors"
+          >
+            email
+          </a>
         </div>
       </div>
       <div className="font-mono text-sm bg-black/40 p-4 rounded-lg border border-zinc-800 shadow-2xl">
