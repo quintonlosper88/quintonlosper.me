@@ -1,5 +1,3 @@
-import {Card, C}
-export const ProjectPage = () =>{
-
-  return (<div><Card className=""></Card></div>)
+export default function ProjectPage() {
+  return <div>Coming soon</div>;
 }

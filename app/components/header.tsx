@@ -1,12 +1,27 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Mail, FileText } from "lucide-react";
 import { Linkedin } from "@/components/Linkedin";
-import { Card, CardHeader, CardDescription } from "@/components/ui/card";
+import { Card, CardDescription } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import profilepic from "@/public/profilepic.jpg";
 import Image from "next/image";
-import { profile } from "console";
+
+const titles = ["Metallurgist", "Product Manager"];
+
 export const HeaderPage = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % titles.length);
+    }, 3000); // Swap every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex flex-col gap-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
@@ -16,8 +31,14 @@ export const HeaderPage = () => {
           <h1 className="text-2xl font-sans uppercase tracking-tighter text-gray-400 mb-2">
             Quinton Losper
           </h1>
-          <h2 className="text-4xl font-bold md:text-3xl text-amber-600 uppercase   mb-6">
-            The Digital Metallurgist
+          <h2 className="text-4xl font-bold md:text-3xl text-amber-600 uppercase mb-6 min-h-[1.2em]">
+            The Digital{" "}
+            <span
+              key={index}
+              className="inline-block animate-in fade-in slide-in-from-bottom-2 duration-1000"
+            >
+              {titles[index]}
+            </span>
           </h2>
 
           {/* Action Buttons */}
@@ -84,7 +105,7 @@ export const HeaderPage = () => {
         </div>
 
         {/* Profile Image Placeholder - Styled to match the dark theme */}
-        <div className="aspect-square bg-zinc-900 border border-white/5 rounded-full hidden md:block overflow-hidden">
+        <div className="aspect-square bg-zinc-900  rounded-full hidden md:block overflow-hidden">
           <Image
             src={profilepic}
             alt="Quinton"

@@ -12,7 +12,6 @@ import { Certification } from "./components/certification";
 import { certification } from "@/lib/data/certification";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
-import { Navbar } from "./components/navbar";
 import { Projects } from "./components/project";
 
 export default function Home() {
@@ -42,7 +41,7 @@ export default function Home() {
           <div className="my-12">
             <Separator className="bg-white/10" />
           </div>
-          <section id="global_projects" className=" bg-[#080808] ">
+          <section id="global_projects" className=" bg-[#080808] py-12">
             <SectionTitle title="projects" subtitle="Global Projects" />
             <Projects />{" "}
           </section>
@@ -51,7 +50,7 @@ export default function Home() {
             <Separator className="bg-white/10" />
           </div>
           {/* Experience */}
-          <section id="experience" className=" bg-[#080808] ">
+          <section id="experience" className=" bg-[#080808] py-12">
             <div className="max-w-7xl mx-auto">
               <SectionTitle
                 title="Career Journey"
@@ -89,7 +88,7 @@ export default function Home() {
             <Separator className="bg-white/10" />
           </div>
           {/* Academic Path */}
-          <section id="academic" className="bg-[#080808] py-20">
+          <section id="academic" className="bg-[#080808] py-12">
             <div className="max-w-7xl mx-auto px-5">
               <SectionTitle
                 title="Academic Path"
@@ -107,7 +106,7 @@ export default function Home() {
             <Separator className="bg-white/10" />
           </div>
           {/* Certifications */}
-          <section id="Certification" className="bg-[#080808] py-20 ">
+          <section id="Certification" className="bg-[#080808] py-12">
             <div className="max-w-7xl mx-auto px-5">
               <SectionTitle
                 title="Certifications"
