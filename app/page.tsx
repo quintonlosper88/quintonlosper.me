@@ -32,9 +32,6 @@ export default function Home() {
   return (
     <>
       {" "}
-      <header className="container mx-auto py-5 px-6 md:px-16 text-end">
-        <Navbar />
-      </header>
       <div className="flex flex-col min-h-screen bg-background text-foreground font-sans">
         <main className="container mx-auto flex flex-col py-20 px-6 md:px-16">
           <HeaderPage />

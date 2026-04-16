@@ -4,7 +4,7 @@ export const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full h-16 bg-[#080808]/80 backdrop-blur-md border-b border-zinc-800 z-50">
         <div className="max-w-7xl mx-auto h-full px-4 flex items-center justify-between">
           {/* Logo / Brand */}
-          <div className="text-amber-500 font-mono font-bold tracking-tighter">
+          <div className="text-amber-500  font-extrabold tracking-tighter">
             <span className="text-4xl font-extrabold text-amber-500 mb-8">
               <h3>QL</h3>
             </span>
