@@ -1,0 +1,145 @@
+import type { LatLngExpression } from "leaflet";
+export const projectlist = [
+  {
+    id: 1,
+    title: "cPlant Commissioning and Operation",
+    type: "Commissioning and Operation",
+    description: "",
+    coordinates: [
+      23.78125687515219, 45.071983969249395,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "",
+  },
+  {
+    id: 2,
+    title: "RADOS Sorting Pilot Plant Commissioning and Operation",
+    type: "Commissioning and Operation",
+    description: "",
+    coordinates: [
+      -23.980911192862575, 28.9090150001874,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "",
+  },
+  {
+    id: 3,
+    title: "Flotation FloatForce & Launder Upgrade",
+    type: "Installation",
+    description: "",
+    coordinates: [
+      31.49601080748131, 39.92248539729226,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "Maaden Phosphate",
+    project: "Al Jalamid",
+  },
+  {
+    id: 4,
+    title: "Rougher-Scavenger Launder Upgrade",
+    type: "Installation and Performance Guarantee Testing",
+    description: "",
+    coordinates: [
+      23.85075039895519, 40.94097845327936,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "Maaden Barrick Coppper Company",
+    project: "Jabal Sayid Mine",
+  },
+  {
+    id: 5,
+    title: "RADOS Sorting Pilot Plant Commissioning and Operation",
+    type: "Commissioning and Operation",
+    description: "",
+    coordinates: [
+      -25.10824447865396, 26.99644321617674,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "Sedibelo Platinum Mines",
+    project: "Pilanesberg Platinum Mines",
+  },
+  {
+    id: 6,
+    title: "Tonkolili 1B Plant Commissioining and Operaiton",
+    type: "Commissioning and Operation",
+    description: "",
+    coordinates: [
+      8.986437432689257, -11.710860913899406,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "African Rainbow Minerals",
+    project: "Tonkolili Iron Ore Mine",
+  },
+  {
+    id: 7,
+    title: "Tonkolili 1C Magnetic Pilot Plant Operation",
+    type: "Commissioning and Operation",
+    description: "",
+    coordinates: [
+      8.986437432689257,
+      -11.710860913899406,
+      ,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "African Rainbow Minerals",
+    project: "Tonkolili Iron Ore Mine",
+  },
+  {
+    id: 8,
+    title: "Thickener Test work",
+    type: "Testing",
+    description: "",
+    coordinates: [
+      23.85075039895519, 40.94097845327936,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "Maaden Barrick Coppper Company",
+    project: "Jabal Sayid Mine",
+  },
+  {
+    id: 9,
+    title: "Thickener Test work",
+    type: "Testing",
+    description: "",
+    coordinates: [
+      23.93629054059822, 38.31177409238394,
+    ] satisfies LatLngExpression,
+    commodity: "",
+    company: "Tronox Saudi Industries",
+    project: "Yanbu Plant",
+  },
+  {
+    id: 10,
+    title: "SLON Industrial Scale Test",
+    type: "Plant Survey",
+    description:
+      "The aim of the test was to evaluate the effectiveness of SLON Magnetic separators on full scale. Identified magnetic ore feed identified and fed to the plant. Full survey conducted to evaluate recoveries and upgrades achievable.",
+    coordinates: [8.68022, -12.501611] satisfies LatLngExpression,
+    commodity: "Magnetite",
+    company: "London Mining",
+    project: "Marampa Mines",
+  },
+  {
+    id: 11,
+    title:
+      "Commissioning and Operation Chrome and PGM Tailings retreatment plant.",
+    type: "Commissioning and Operaiton",
+    description:
+      "Commissioning and operation of chrome tailings retreatment plant. Plant consisted of chrome recovery plant with gravity circuit and PGM flotation circuit treating the tails of the gravity circuit.",
+    coordinates: [-25.656946, 27.842003] satisfies LatLngExpression,
+    commodity: "Chrome and PGM",
+    company: "Hernic Ferrochrome",
+    project: "Hernic",
+  },
+  {
+    id: 12,
+    title: "Low grade lumpy Jig grade recovery profiles",
+    type: "Jig Pilot Test Work",
+    description:
+      "Test various low grade feeds to build lumpy jig grade recovery profile used for planning",
+    coordinates: [-27.861519, 22.974825] satisfies LatLngExpression,
+    commodity: "Hematite",
+    company: "Assmang",
+    project: "Khumani Iron Ore",
+  },
+];
